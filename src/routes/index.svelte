@@ -1,2 +1,8 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<div style="text-align: center">
+	<h1>oh shit waddup</h1>
+	<p>
+		<a href="https://www.youtube.com/watch?v=FoUWHfh733Y"
+			>Drink all the booze, hack all the things</a
+		>
+	</p>
+</div>
