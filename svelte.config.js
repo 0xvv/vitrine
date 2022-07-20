@@ -1,5 +1,4 @@
-import adapter from "@sveltejs/adapter-static";
-import adapterGh from "svelte-adapter-ghpages";
+import adapter from '@sveltejs/adapter-cloudflare';
 import preprocess from 'svelte-preprocess';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -9,21 +8,14 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: adapterGh( {
-			pages: 'docs',
-			assets: 'docs',
-			fallback: null
-		} ),
+		adapter: adapter(),
 		prerender: {
 			default: true
 		},
 		paths: {
-			assets: "http://σ.tech",
-			base: "/vitrine"
+			assets: 'http://σ.tech'
 		}
-	},
-
-
+	}
 };
 
 export default config;
