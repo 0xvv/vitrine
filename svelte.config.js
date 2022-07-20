@@ -11,9 +11,6 @@ const config = {
 		adapter: adapter(),
 		prerender: {
 			default: true
-		},
-		paths: {
-			assets: 'http://σ.tech'
 		}
 	}
 };
