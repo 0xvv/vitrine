@@ -1,11 +1,11 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-6ed48253.js",
+    "file": "start-be0be878.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-9bd380f5.js",
-      "_index-524743a7.js"
+      "_index-665e9a62.js",
+      "_index-d7a1056a.js"
     ],
     "dynamicImports": [
       "src/routes/__layout.svelte",
@@ -15,49 +15,49 @@
     ]
   },
   "src/routes/__layout.svelte": {
-    "file": "_app/immutable/pages/__layout.svelte-d2ba738f.js",
+    "file": "pages/__layout.svelte-0962886f.js",
     "src": "src/routes/__layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9bd380f5.js",
-      "_index-524743a7.js"
+      "_index-665e9a62.js",
+      "_index-d7a1056a.js"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "_app/immutable/error.svelte-52e1514b.js",
+    "file": "error.svelte-a2e2b250.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9bd380f5.js"
+      "_index-665e9a62.js"
     ]
   },
   "src/routes/404.svelte": {
-    "file": "_app/immutable/pages/404.svelte-555976af.js",
+    "file": "pages/404.svelte-6f2903a0.js",
     "src": "src/routes/404.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9bd380f5.js"
+      "_index-665e9a62.js"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "_app/immutable/pages/index.svelte-b1d80b20.js",
+    "file": "pages/index.svelte-665d2d60.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-9bd380f5.js"
+      "_index-665e9a62.js"
     ]
   },
-  "_index-9bd380f5.js": {
-    "file": "_app/immutable/chunks/index-9bd380f5.js"
+  "_index-665e9a62.js": {
+    "file": "chunks/index-665e9a62.js"
   },
-  "_index-524743a7.js": {
-    "file": "_app/immutable/chunks/index-524743a7.js",
+  "_index-d7a1056a.js": {
+    "file": "chunks/index-d7a1056a.js",
     "imports": [
-      "_index-9bd380f5.js"
+      "_index-665e9a62.js"
     ]
   }
 }
