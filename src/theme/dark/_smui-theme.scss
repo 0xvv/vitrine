@@ -2,8 +2,8 @@
 
 @use '@material/theme/color-palette';
 
-$bg: #111133;
-$prim: #2500c685;
+$bg: #0a0037;
+$prim: #130066;
 
 @use '@material/theme/index' as theme with (
 	$primary: $prim,
