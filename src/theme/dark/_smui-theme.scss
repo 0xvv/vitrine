@@ -3,7 +3,8 @@
 @use '@material/theme/color-palette';
 
 $bg: #0a0037;
-$prim: #130066;
+//$prim: #130066;
+$prim: #FCBA04;
 
 @use '@material/theme/index' as theme with (
 	$primary: $prim,
@@ -17,6 +18,7 @@ html,
 body {
 	background-color: $bg;
 	color: theme.$on-surface;
+	font-family: "SansSerif", sans-serif;
 }
 
 a {
