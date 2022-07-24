@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Button, {Label} from "@smui/button";
+	import Button, { Label } from '@smui/button';
 </script>
 
 <div class="center">
@@ -16,11 +16,13 @@
 		</Button>
 		<p>
 			<a href="https://www.youtube.com/watch?v=FoUWHfh733Y"
-			>Drink all the booze, hack all the things</a
+				>Drink all the booze, hack all the things</a
 			>
 		</p>
+		<p>
+			<a href="/track">Secret track bike calculator</a>
+		</p>
 	</div>
-
 </div>
 
 <style>
@@ -29,10 +31,10 @@
 		flex-direction: column;
 		width: 500px;
 		justify-content: space-evenly;
-		height: 350px;
+		height: 450px;
 	}
 
-	.center{
+	.center {
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
