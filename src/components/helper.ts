@@ -89,38 +89,67 @@ export function make_table_meters(
 	}
 	return table;
 }
-/*
-export function make_table_cadence(cogMin, cogMax, cRing, firstCol, selectedWheelSize, selectedTireSize, cadences) {
-	let tableau = [];
-	for (let ligne = cogMin; ligne <= cogMax; ligne++) {
-		let lign = [];
-		lign.push(firstCol[ligne-cogMin+1]);
-		for (let colonne = 1 ; colonne < cadences.length; colonne++) {
-			lign.push(Math.round(((selectedWheelSize+selectedTireSize*2)*3.14159*(cRing / ligne))*cadences[colonne]*60/100000)/10);
+
+export function make_table_cadence(
+	cogMin: number,
+	cogMax: number,
+	cRing: number,
+	firstCol: string[],
+	selectedWheelSize: number,
+	selectedTireSize: number,
+	cadences: number[]
+) {
+	const table = [];
+	for (let lineIndex = cogMin; lineIndex <= cogMax; lineIndex++) {
+		const line = [];
+		line.push(firstCol[lineIndex - cogMin + 1]);
+		for (let columnIndex = 1; columnIndex < cadences.length; columnIndex++) {
+			line.push(
+				Math.round(
+					((selectedWheelSize + selectedTireSize * 2) *
+						3.14159 *
+						(cRing / lineIndex) *
+						cadences[columnIndex] *
+						60) /
+						100000
+				) / 10
+			);
 		}
-		tableau.push(lign);
+		table.push(line);
 	}
-	return tableau;
+	return table;
 }
 
-export function make_table_skid(cogMin, cogMax, cRingMin, cRingMax, firstCol, ambidextrous) {
-	let tableau = [];
-	for (let ligne = cogMin; ligne <= cogMax; ligne++) {
-		let lign = [];
-		lign.push(firstCol[ligne-cogMin+1]);
-		for (let colonne = cRingMin; colonne <= cRingMax; colonne++) {
-			let gd = gcd(colonne, ligne);
-			if ((colonne/gd) %2 != 0 & ambidextrous === true)
-			{lign.push(ligne * 2 / gd);}
-			else
-			{lign.push(ligne / gcd(colonne, ligne));}
+export function make_table_skid(
+	cogMin: number,
+	cogMax: number,
+	cRingMin: number,
+	cRingMax: number,
+	firstCol: [],
+	ambidextrous: boolean
+) {
+	const table = [];
+	for (let lineIndex = cogMin; lineIndex <= cogMax; lineIndex++) {
+		const line = [];
+		line.push(firstCol[lineIndex - cogMin + 1]);
+		for (let columnIndex = cRingMin; columnIndex <= cRingMax; columnIndex++) {
+			const gd = gcd(columnIndex, lineIndex);
+			if ((columnIndex / gd) % 2 != 0 && ambidextrous) {
+				line.push((lineIndex * 2) / gd);
+			} else {
+				line.push(lineIndex / gcd(columnIndex, lineIndex));
+			}
 		}
-		tableau.push(lign);
+		table.push(line);
 	}
-	return tableau;
+	return table;
 }
 
-export function calculate_chain_length(pitch, chainringCount, sprocketCount, distance){
-	return (chainringCount/2 + sprocketCount/2) * pitch + distance * 2;
+export function calculate_chain_length(
+	pitch: number,
+	chainringCount: number,
+	sprocketCount: number,
+	distance: number
+) {
+	return (chainringCount / 2 + sprocketCount / 2) * pitch + distance * 2;
 }
-*/

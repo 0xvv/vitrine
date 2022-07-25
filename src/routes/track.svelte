@@ -4,6 +4,8 @@
 	import Gearmeters from '../components/Gearmeters.svelte';
 	import * as t from '../components/helper.ts';
 	import CustomSelect from '../components/CustomSelect.svelte';
+	import GearRatio from '../components/GearRatio.svelte';
+	import Cadence from '../components/Cadence.svelte';
 
 	let tabs = [
 		{
@@ -80,9 +82,9 @@
 				{#if active.k === 1}
 					<Gearmeters {...params} />
 				{:else if active.k === 2}
-					<h1>what's up dawg</h1>
+					<GearRatio {...params} />
 				{:else if active.k === 3}
-					<h1>wazzaaaaa</h1>
+					<Cadence {...params} />
 				{:else if active.k === 4}
 					<h1>Comment ça va</h1>
 				{/if}
