@@ -1,26 +1,48 @@
 <script>
-	import Tableau from './Table.svelte'
-	import * as t from './helper.ts'
+	import Tableau from './Table.svelte';
+	import * as t from './helper.ts';
 
-	let optionsCog = t.optionsCog;
-	let optionsChain = t.optionsChain;
-	let optionsWheel = t.optionsWheel;
-	let optionsTire = t.optionsTire;
-	let defaultCogMin = t.defaultCogMin;
-	let defaultCogMax = t.defaultCogMax;
-	let defaultChainMin = t.defaultChainMin;
-	let defaultChainMax = t.defaultChainMax;
-	let defaultWheelSize = t.defaultWheelSize;
-	let defaultTireSize = t.defaultTireSize;
+	export let cogMin = t.defaultCogMin;
+	export let cogMax = t.defaultCogMax;
+	export let chainMin = t.defaultChainMin;
+	export let chainMax = t.defaultChainMax;
+	export let wheelSize = t.defaultWheelSize;
+	export let tireSize = t.defaultTireSize;
 
-	let firstRow = t.make_list(defaultChainMin, defaultChainMax);
-	let firstCol = t.make_list(defaultCogMin, defaultCogMax);
-	let tableau = t.make_table_meters(defaultCogMin, defaultCogMax, defaultChainMin, defaultChainMax, firstCol, defaultWheelSize, defaultTireSize);
+	$: {
+		cogMax;
+		cogMin;
+		chainMin;
+		chainMax;
+		wheelSize;
+		tireSize;
+		remakeTab();
+	}
+
+	let firstRow = t.make_list(chainMin, chainMax);
+	let firstCol = t.make_list(cogMin, cogMax);
+	let tableau = t.make_table_meters(
+		cogMin,
+		cogMax,
+		chainMin,
+		chainMax,
+		firstCol,
+		wheelSize,
+		tireSize
+	);
 
 	function remakeTab() {
-		firstRow = t.make_list(defaultChainMin, defaultChainMax);
-		firstCol = t.make_list(defaultCogMin, defaultCogMax);
-		tableau = t.make_table_meters(defaultCogMin, defaultCogMax, defaultChainMin, defaultChainMax, firstCol, defaultWheelSize, defaultTireSize);
+		firstRow = t.make_list(chainMin, chainMax);
+		firstCol = t.make_list(cogMin, cogMax);
+		tableau = t.make_table_meters(
+			cogMin,
+			cogMax,
+			chainMin,
+			chainMax,
+			firstCol,
+			wheelSize,
+			tireSize
+		);
 	}
 </script>
 
@@ -30,5 +52,4 @@
 
 <h2>Gear meters calculator</h2>
 
-<Tableau {firstRow} {tableau} firstThres={4} secondThres={5} thirdThres={6}/>
-
+<Tableau {firstRow} {tableau} firstThres={4} secondThres={5} thirdThres={6} />
