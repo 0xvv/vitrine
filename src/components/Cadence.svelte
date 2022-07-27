@@ -51,17 +51,18 @@
 
 <h2>Speed at cadence calculator (km/h)</h2>
 <h3>Chainring : {chain} teeth</h3>
-
-<Slider
-	bind:value={chain}
-	min={chainMin}
-	max={chainMax}
-	step={1}
-	discrete
-	tickMarks
-	input$aria-label="Tick mark slider"
-	style="margin-top: 1em"
-/>
+{#if chainMax > chainMin}
+	<Slider
+		bind:value={chain}
+		min={chainMin}
+		max={chainMax}
+		step={1}
+		discrete
+		tickMarks
+		input$aria-label="Tick mark slider"
+		style="margin-top: 1em"
+	/>
+{/if}
 <Tableau
 	{firstRow}
 	{tableau}

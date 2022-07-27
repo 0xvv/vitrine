@@ -38,4 +38,4 @@
 		<span slot="label">Ambidextrous skitch</span>
 	</FormField>
 </div>
-<Table {firstRow} {tableau} firstThres={0} secondThres={5} thirdThres={8} />
+<Table {firstRow} {tableau} firstThres={0} secondThres={5} thirdThres={10} />

@@ -43,14 +43,30 @@
 	</table>
 </div>
 
-<style>
+<style lang="scss">
+	@use 'src/theme/dark/smui-theme' as theme;
+
 	td,
 	th {
 		padding: 7px;
 		text-align: center;
+		border: none;
 	}
 
 	.tablearea {
 		margin-top: 2em;
+	}
+
+	.table-success {
+		background: #a7cecb;
+		color: theme.$bg;
+	}
+
+	.table-warning {
+		background: #d95d39;
+	}
+
+	.table-danger {
+		background: #6b0504;
 	}
 </style>
