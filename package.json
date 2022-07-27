@@ -19,9 +19,11 @@
 	"devDependencies": {
 		"@playwright/test": "^1.22.2",
 		"@smui/button": "^6.0.0-beta.16",
+		"@smui/form-field": "^6.0.0",
 		"@smui/icon-button": "^6.0.0-beta.16",
 		"@smui/select": "^6.0.0",
 		"@smui/slider": "^6.0.0",
+		"@smui/switch": "^6.0.0",
 		"@smui/tab": "^6.0.0",
 		"@smui/tab-bar": "^6.0.0",
 		"@smui/top-app-bar": "^6.0.0-beta.16",

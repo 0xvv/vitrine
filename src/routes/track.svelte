@@ -6,6 +6,7 @@
 	import CustomSelect from '../components/CustomSelect.svelte';
 	import GearRatio from '../components/GearRatio.svelte';
 	import Cadence from '../components/Cadence.svelte';
+	import Skidpatches from '../components/Skidpatches.svelte';
 
 	let tabs = [
 		{
@@ -86,7 +87,7 @@
 				{:else if active.k === 3}
 					<Cadence {...params} />
 				{:else if active.k === 4}
-					<h1>Comment ça va</h1>
+					<Skidpatches {...params} />
 				{/if}
 			</div>
 		</div>

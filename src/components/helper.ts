@@ -125,7 +125,7 @@ export function make_table_skid(
 	cogMax: number,
 	cRingMin: number,
 	cRingMax: number,
-	firstCol: [],
+	firstCol: string[],
 	ambidextrous: boolean
 ) {
 	const table = [];
