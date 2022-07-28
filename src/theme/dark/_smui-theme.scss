@@ -14,14 +14,11 @@
 
 html,
 body {
-	background-color: $bg;
+	background-color: c.$bg;
 	color: theme.$on-surface;
 	font-family: 'SansSerif', sans-serif;
 }
 
-a {
-	color: $bg;
-}
 a:visited {
 	color: color.scale(#40b3ff, $lightness: -35%);
 }

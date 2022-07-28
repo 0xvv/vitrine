@@ -8,8 +8,18 @@
 			<Title>Matt "double v"</Title>
 		</Section>
 		<Section align="end">
-			<h4>Crypto and cyber security</h4>
+			<a href="https://www.youtube.com/watch?v=FoUWHfh733Y" class="chill"
+				><h4>Crypto and cyber security</h4></a
+			>
 		</Section>
 	</Row>
 </TopAppBar>
 <slot />
+
+<style lang="scss">
+	.chill {
+		color: inherit;
+		text-decoration: inherit;
+		cursor: inherit;
+	}
+</style>

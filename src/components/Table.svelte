@@ -54,7 +54,7 @@
 	}
 
 	.tablearea {
-		margin-top: 2em;
+		margin-top: 1em;
 	}
 
 	.table-success {
