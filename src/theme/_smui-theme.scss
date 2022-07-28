@@ -2,10 +2,10 @@
 
 @use '@material/theme/color-palette';
 
-$prim: rgba(48, 0, 255, 0.34);
+@use 'src/theme/colors' as c;
 
 @use '@material/theme/index' as theme with (
-	$primary: $prim,
+	$primary: c.$prim,
 	$secondary: #676778,
 	$surface: #fff,
 	$background: #fff,

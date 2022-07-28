@@ -26,10 +26,6 @@
 	}
 </script>
 
-<svelte:head>
-	<title>Gear Ratio calculator</title>
-</svelte:head>
-
 <h2>Gear Ratio calculator</h2>
 
 <Tableau {firstRow} {tableau} firstThres={2} secondThres={2.5} thirdThres={3} />

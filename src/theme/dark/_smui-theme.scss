@@ -2,15 +2,13 @@
 
 @use '@material/theme/color-palette';
 
-$bg: #0a0037;
-//$prim: #130066;
-$prim: #fcba04;
+@use 'src/theme/colors' as c;
 
 @use '@material/theme/index' as theme with (
-	$primary: $prim,
+	$primary: c.$prim,
 	$secondary: color.scale(#676778, $whiteness: -10%),
 	$surface: color.adjust(color-palette.$grey-900, $blue: +4),
-	$background: $bg,
+	$background: c.$bg,
 	$error: color-palette.$red-700
 );
 

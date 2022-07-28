@@ -7,11 +7,12 @@
 	import GearRatio from '../components/GearRatio.svelte';
 	import Cadence from '../components/Cadence.svelte';
 	import Skidpatches from '../components/Skidpatches.svelte';
+	import Chainlength from '../components/Chainlength.svelte';
 
 	let tabs = [
 		{
 			k: 1,
-			icon: 'straighten',
+			icon: 'rocket_launch',
 			label: 'Gear Meters'
 		},
 		{
@@ -21,13 +22,18 @@
 		},
 		{
 			k: 3,
-			icon: 'change_circle',
+			icon: 'autorenew',
 			label: 'Cadence'
 		},
 		{
 			k: 4,
 			icon: 'tire_repair',
 			label: 'Skid patches'
+		},
+		{
+			k: 5,
+			icon: 'link',
+			label: 'Chain Length'
 		}
 	];
 	let active = tabs[0];
@@ -88,6 +94,8 @@
 					<Cadence {...params} />
 				{:else if active.k === 4}
 					<Skidpatches {...params} />
+				{:else if active.k === 5}
+					<Chainlength {...params} />
 				{/if}
 			</div>
 		</div>

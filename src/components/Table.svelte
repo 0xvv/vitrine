@@ -44,7 +44,7 @@
 </div>
 
 <style lang="scss">
-	@use 'src/theme/dark/smui-theme' as theme;
+	@use 'src/theme/colors' as c;
 
 	td,
 	th {
@@ -58,15 +58,15 @@
 	}
 
 	.table-success {
-		background: #a7cecb;
-		color: theme.$bg;
+		background: c.$green;
+		color: c.$bg;
 	}
 
 	.table-warning {
-		background: #d95d39;
+		background: c.$orange;
 	}
 
 	.table-danger {
-		background: #6b0504;
+		background: c.$red;
 	}
 </style>

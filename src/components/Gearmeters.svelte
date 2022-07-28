@@ -46,10 +46,6 @@
 	}
 </script>
 
-<svelte:head>
-	<title>Gear meters calculator</title>
-</svelte:head>
-
 <h2>Gear meters calculator (m/rev)</h2>
 
 <Tableau {firstRow} {tableau} firstThres={4} secondThres={5} thirdThres={6} />

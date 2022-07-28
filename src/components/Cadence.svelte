@@ -45,12 +45,7 @@
 	}
 </script>
 
-<svelte:head>
-	<title>Gear Ratio calculator</title>
-</svelte:head>
-
 <h2>Speed at cadence calculator (km/h)</h2>
-<h3>Chainring : {chain} teeth</h3>
 {#if chainMax > chainMin}
 	<Slider
 		bind:value={chain}
@@ -63,6 +58,8 @@
 		style="margin-top: 1em"
 	/>
 {/if}
+<h3>Chainring : {chain} teeth</h3>
+
 <Tableau
 	{firstRow}
 	{tableau}

@@ -7,7 +7,7 @@
 </script>
 
 <div>
-	<Select bind:value style="width: 55%">
+	<Select variant="outlined" bind:value style="width: 75%">
 		{#each options as option}
 			<Option value={option}>{option}</Option>
 		{/each}
