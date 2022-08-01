@@ -1,28 +1,44 @@
 <script lang="ts">
-	import Button, { Label } from '@smui/button';
+	import Button, {Label} from '@smui/button';
 </script>
 
-<div class="center">
-	<div class="container">
-		<a href="/track" class="track"><h1>Useful links</h1></a>
-		<Button variant="unelevated" href="https://github.com/0xvv">
-			<Label>Github</Label>
-		</Button>
-		<Button variant="unelevated" href="https://twitter.com/0xvv_sec">
-			<Label>Twitter</Label>
-		</Button>
-		<Button variant="unelevated" href="mailto:public_double_v@protonmail.com">
-			<Label>Email</Label>
-		</Button>
+<div class="col">
+
+	<div class="center">
+		<div class="col container">
+			<a href="/track" class="track"><h1>Useful links</h1></a>
+			<Button variant="unelevated" href="https://github.com/0xvv">
+				<Label>Github</Label>
+			</Button>
+			<Button variant="unelevated" href="https://twitter.com/0xvv_sec">
+				<Label>Twitter</Label>
+			</Button>
+			<Button variant="unelevated" href="mailto:public_double_v@protonmail.com">
+				<Label>Email</Label>
+			</Button>
+		</div>
+
+
+	</div>
+	<div class="center">
+
+		<div class="container">
+			<h2>Notable work</h2>
+			<p>Contribution to <a href="https://github.com/foundry-rs">foundry-rs</a></p>
+			<p>Example code for <a href="https://github.com/foundry-rs">snowsight</a> use in Rust</p>
+		</div>
 	</div>
 </div>
 
 <style>
-	.container {
+	.col {
 		display: flex;
 		flex-direction: column;
-		width: 500px;
 		justify-content: space-evenly;
+	}
+
+	.container {
+		width: 500px;
 		height: 300px;
 	}
 
