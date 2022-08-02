@@ -5,10 +5,10 @@
 <TopAppBar variant="static" style="padding: 0">
 	<Row style="padding-left: 2em; padding-right: 2em">
 		<Section>
-			<Title>Matt "double v"</Title>
+			<a href="/" class="link"><Title>Matt "double v"</Title></a>
 		</Section>
 		<Section align="end">
-			<a href="https://www.youtube.com/watch?v=FoUWHfh733Y" class="chill"
+			<a href="https://www.youtube.com/watch?v=FoUWHfh733Y" class="secret link"
 				><h4>Crypto and cyber security</h4></a
 			>
 		</Section>
@@ -17,9 +17,12 @@
 <slot />
 
 <style lang="scss">
-	.chill {
+	.link {
 		color: inherit;
 		text-decoration: inherit;
+	}
+
+	.secret {
 		cursor: inherit;
 	}
 </style>

@@ -1,9 +1,8 @@
 <script lang="ts">
-	import Button, {Label} from '@smui/button';
+	import Button, { Label } from '@smui/button';
 </script>
 
 <div class="col">
-
 	<div class="center">
 		<div class="col container">
 			<a href="/track" class="track"><h1>Useful links</h1></a>
@@ -17,15 +16,14 @@
 				<Label>Email</Label>
 			</Button>
 		</div>
-
-
 	</div>
 	<div class="center">
-
 		<div class="container">
 			<h2>Notable work</h2>
 			<p>Contribution to <a href="https://github.com/foundry-rs">foundry-rs</a></p>
-			<p>Example code for <a href="https://github.com/foundry-rs">snowsight</a> use in Rust</p>
+			<p>
+				Example code for <a href="https://docs.snowsight.chainsight.dev/">snowsight</a> use in Rust
+			</p>
 		</div>
 	</div>
 </div>

@@ -5,7 +5,7 @@
 @use 'src/theme/colors' as c;
 
 @use '@material/theme/index' as theme with (
-	$primary: c.$prim,
+	$primary: c.$prim-light,
 	$secondary: #676778,
 	$surface: #fff,
 	$background: #fff,
@@ -20,9 +20,9 @@ body {
 }
 
 a:visited {
-	color: color.scale(#40b3ff, $lightness: -35%);
+	color: color.scale(c.$prim-light, $lightness: -35%);
 }
 
 a {
-	color: blue;
+	color: c.$prim-light;
 }
