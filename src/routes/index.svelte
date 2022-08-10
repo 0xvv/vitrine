@@ -4,6 +4,14 @@
 
 <div class="col">
 	<div class="center">
+		<div class="">
+			<h2>Looking for work</h2>
+			<p>Interested in building more secure software and a better user experience</p>
+			<p>I have a wide cyber security culture both in web3 and web2</p>
+			<p>I would like to work with Rust with an emphasis on security</p>
+		</div>
+	</div>
+	<div class="center">
 		<div class="col container">
 			<a href="/track" class="track"><h1>Useful links</h1></a>
 			<Button variant="unelevated" href="https://github.com/0xvv">
@@ -20,7 +28,7 @@
 	<div class="center">
 		<div class="container">
 			<h2>Notable work</h2>
-			<p>Contribution to <a href="https://github.com/foundry-rs">foundry-rs</a></p>
+			<p>Contributions to <a href="https://github.com/foundry-rs">foundry-rs</a></p>
 			<p>
 				Example code for <a href="https://docs.snowsight.chainsight.dev/">snowsight</a> use in Rust
 			</p>
