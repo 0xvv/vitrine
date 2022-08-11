@@ -5,10 +5,11 @@
 <div class="col">
 	<div class="center">
 		<div class="">
-			<h2>Looking for work</h2>
-			<p>Interested in building more secure software and a better user experience</p>
-			<p>I have a wide cyber security culture both in web3 and web2</p>
-			<p>I would like to work with Rust with an emphasis on security</p>
+			<h2>I'm looking for work</h2>
+			<p>I have a vast cyber security culture both in web3 and web2 built over years and more recently fell down the MEV rabbit hole. </p>
+			<p>I think i would be a good fit in blockchain security, MEV or an adjacent field, thanks to my adversarial mindset and natural interest about these topics</p>
+			<p>My goal is to help build better, more secure software and enhance user experience</p>
+			<p>Don't hesitate to contact me to chat or if you want my resume, see Twitter or Email below.</p>
 		</div>
 	</div>
 	<div class="center">
@@ -30,7 +31,7 @@
 			<h2>Notable work</h2>
 			<p>Contributions to <a href="https://github.com/foundry-rs">foundry-rs</a></p>
 			<p>
-				Example code for <a href="https://docs.snowsight.chainsight.dev/">snowsight</a> use in Rust
+				Basic Rust client for <a href="https://docs.snowsight.chainsight.dev/">snowsight mempool streaming service</a>
 			</p>
 		</div>
 	</div>
