@@ -33,6 +33,9 @@
 			<p>
 				Basic Rust client for <a href="https://docs.snowsight.chainsight.dev/">snowsight mempool streaming service</a>
 			</p>
+			<p>
+				Scored 32nd in <a href="https://ctf.paradigm.xyz">Paradigm CTF 2022</a> with the <a href="https://skidsdao.xyz">SkidsDAO team</a>
+			</p>
 		</div>
 	</div>
 </div>
