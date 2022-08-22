@@ -35,7 +35,7 @@
 <div>
 	<FormField>
 		<Switch bind:checked={ambidextrous} />
-		<span slot="label">Ambidextrous skitch</span>
+		<span slot="label">Ambidextrous skid</span>
 	</FormField>
 </div>
 <Table {firstRow} {tableau} firstThres={0} secondThres={5} thirdThres={10} />
