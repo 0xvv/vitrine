@@ -26,7 +26,7 @@
 					<Button variant="unelevated" href="https://github.com/0xvv">
 						<Label>Github</Label>
 					</Button>
-					<Button variant="unelevated" href="https://twitter.com/0xvv_sec">
+					<Button variant="unelevated" href="https://twitter.com/0x5676">
 						<Label>Twitter</Label>
 					</Button>
 					<Button variant="unelevated" href="mailto:public_double_v@protonmail.com">
