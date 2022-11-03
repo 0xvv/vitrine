@@ -3,23 +3,6 @@
 </script>
 
 <div class="col">
-	<div class="center">
-		<div style="width: 1000px">
-			<h2>I'm looking for work</h2>
-			<p>
-				I have a vast cyber security culture both in web3 and web2 built over years and more
-				recently fell down the MEV rabbit hole.
-			</p>
-			<p>
-				I think i would be a good fit in blockchain security, MEV or an adjacent field, thanks to my
-				adversarial mindset and natural interest about these topics
-			</p>
-			<p>My goal is to help build better, more secure software and enhance user experience</p>
-			<p>
-				Don't hesitate to contact me to chat or if you want my resume, see Twitter or Email below.
-			</p>
-		</div>
-	</div>
 	<div class="row">
 		<div class="center">
 			<div class="container">
@@ -51,6 +34,13 @@
 					</Button>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="center">
+		<div style="width: 1000px">
+			<p>
+				I am currently working as a smart contract developer at <a href="https://kiln.fi">Kiln</a>
+			</p>
 		</div>
 	</div>
 </div>
